@@ -1,0 +1,119 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "example-sveltekit-pwa",
+      "version": "0.0.0",
+      "private": true,
+      "scripts": {
+        "dev": "svelte-kit dev",
+        "build": "svelte-kit build",
+        "package": "svelte-kit package",
+        "preview": "svelte-kit preview",
+        "check": "svelte-check --tsconfig ./tsconfig.json",
+        "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+        "lint": "eslint --ignore-path .gitignore .",
+        "start": "npm run run-build && npm run preview",
+        "start-reloadsw": "npm run run-build-reloadsw && npm run preview",
+        "start-claims": "npm run run-build-claims && npm run preview",
+        "start-claims-reloadsw": "npm run run-build-reloadsw-claims && npm run preview",
+        "start-sw": "npm run run-build-sw && npm run preview",
+        "start-sw-reloadsw": "npm run run-build-sw-reloadsw && npm run preview",
+        "start-sw-claims": "npm run run-build-sw-claims && npm run preview",
+        "start-sw-claims-reloadsw": "npm run run-build-sw-reloadsw-claims && npm run preview",
+        "run-build": "rimraf .svelte-kit && rimraf build && cross-env DEBUG=vite-plugin-pwa:* BASE_URL=/ SOURCE_MAP=true svelte-kit build && node ./pwa.js --BASE_URL=/ --SOURCE_MAP=true",
+        "run-build-reloadsw": "rimraf .svelte-kit && rimraf build && cross-env DEBUG=vite-plugin-pwa:* BASE_URL=/ SOURCE_MAP=true RELOAD_SW=true svelte-kit build && node ./pwa.js --BASE_URL=/ --SOURCE_MAP=true --RELOAD_SW=true",
+        "run-build-claims": "rimraf .svelte-kit && rimraf build && cross-env DEBUG=vite-plugin-pwa:* BASE_URL=/ SOURCE_MAP=true CLAIMS=true svelte-kit build && node ./pwa.js --BASE_URL=/ --SOURCE_MAP=true --CLAIMS=true",
+        "run-build-reloadsw-claims": "routify -b && cross-env DEBUG=vite-plugin-pwa:* BASE_URL=/ SOURCE_MAP=true CLAIMS=true RELOAD_SW=true svelte-kit build && node ./pwa.js --BASE_URL=/ --SOURCE_MAP=true --CLAIMS=true --RELOAD_SW=true",
+        "run-build-sw": "rimraf .svelte-kit && rimraf build && cross-env DEBUG=vite-plugin-pwa:* BASE_URL=/ SOURCE_MAP=true SW=true svelte-kit build && node ./pwa.js --BASE_URL=/ --SOURCE_MAP=true --SW=true",
+        "run-build-sw-reloadsw": "rimraf .svelte-kit && rimraf build && cross-env DEBUG=vite-plugin-pwa:* BASE_URL=/ SOURCE_MAP=true RELOAD_SW=true SW=true svelte-kit build && node ./pwa.js --BASE_URL=/ --SOURCE_MAP=true --RELOAD_SW=true --SW=true",
+        "run-build-sw-claims": "rimraf .svelte-kit && rimraf build && cross-env DEBUG=vite-plugin-pwa:* BASE_URL=/ SOURCE_MAP=true CLAIMS=true SW=true svelte-kit build && node ./pwa.js --BASE_URL=/ --SOURCE_MAP=true --CLAIMS=true --SW=true",
+        "run-build-sw-reloadsw-claims": "rimraf .svelte-kit && rimraf build && cross-env DEBUG=vite-plugin-pwa:* BASE_URL=/ SOURCE_MAP=true CLAIMS=true RELOAD_SW=true SW=true svelte-kit build && node ./pwa.js --BASE_URL=/ --SOURCE_MAP=true --CLAIMS=true --RELOAD_SW=true --SW=true"
+      },
+      "devDependencies": {
+        "@rollup/plugin-replace": "^3.0.0",
+        "@sveltejs/adapter-static": "next",
+        "@sveltejs/kit": "next",
+        "@typescript-eslint/eslint-plugin": "^5.6.0",
+        "@typescript-eslint/parser": "^5.6.0",
+        "cross-env": "^7.0.3",
+        "eslint": "^8.4.1",
+        "eslint-plugin-svelte3": "^3.2.1",
+        "https-localhost": "^4.7.0",
+        "minimist": "^1.2.5",
+        "rimraf": "^3.0.2",
+        "svelte": "^3.44.2",
+        "svelte-check": "^2.2.10",
+        "svelte-preprocess": "^4.9.8",
+        "tslib": "^2.3.1",
+        "typescript": "^4.5.2",
+        "vite-plugin-pwa": "workspace:*",
+        "workbox-core": "^6.4.2",
+        "workbox-precaching": "^6.4.2",
+        "workbox-routing": "^6.4.2"
+      },
+      "type": "module"
+    },
+    "prefix": "C:\\Users\\avivy\\Projects_clean\\Svelte\\quickimageoftheday"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "C:\\Users\\avivy\\.pnpm-store\\v3",
+    "virtualStoreDir": "C:\\Users\\avivy\\Projects_clean\\Svelte\\quickimageoftheday\\node_modules\\.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "C:\\Users\\avivy\\Projects_clean\\Svelte\\quickimageoftheday",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/cross-env/7.0.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "cross-env",
+      "rawSpec": "^7.0.3"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/cross-env/7.0.3",
+    "requester": "C:\\Users\\avivy\\Projects_clean\\Svelte\\quickimageoftheday",
+    "status": "resolved"
+  },
+  "6 error pnpm": {
+    "code": "ERR_PNPM_NO_MATCHING_VERSION_INSIDE_WORKSPACE",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "In : No matching version found for vite-plugin-pwa@* inside the workspace",
+      "code": "ERR_PNPM_NO_MATCHING_VERSION_INSIDE_WORKSPACE",
+      "stack": "pnpm: In : No matching version found for vite-plugin-pwa@* inside the workspace\n    at tryResolveFromWorkspace (C:\\Users\\avivy\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:85268:15)\n    at resolveNpm (C:\\Users\\avivy\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:85159:39)\n    at Object.resolve (C:\\Users\\avivy\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:85391:40)\n    at ctx.requestsQueue.add.priority (C:\\Users\\avivy\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:71356:75)\n    at run (C:\\Users\\avivy\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:71095:90)\n    at PQueue._tryToStartAnother (C:\\Users\\avivy\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:71049:13)\n    at PQueue._next (C:\\Users\\avivy\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:70998:14)\n    at run (C:\\Users\\avivy\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:71105:18)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
+    }
+  },
+  "7 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/rimraf/3.0.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "rimraf",
+      "rawSpec": "^3.0.2"
+    }
+  },
+  "8 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rimraf/3.0.2",
+    "requester": "C:\\Users\\avivy\\Projects_clean\\Svelte\\quickimageoftheday",
+    "status": "resolved"
+  },
+  "9 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/tslib/2.3.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "tslib",
+      "rawSpec": "^2.3.1"
+    }
+  },
+  "10 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/tslib/2.3.1",
+    "requester": "C:\\Users\\avivy\\Projects_clean\\Svelte\\quickimageoftheday",
+    "status": "resolved"
+  }
+}
