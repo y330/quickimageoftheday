@@ -1,6 +1,6 @@
 <script>
   import { goto } from "$app/navigation";
-  import Counter from "./Counter.svelte";
+//   import Counter from "./Counter.svelte";
 
   // replaced dyanmicaly
   const date = "__DATE__";

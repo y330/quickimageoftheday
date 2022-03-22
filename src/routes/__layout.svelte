@@ -6,9 +6,9 @@
 	const date = '__DATE__'
 
 	let ReloadPrompt
-	onMount(async () => {
-		!dev && browser && (ReloadPrompt = (await import('$lib/components/ReloadPrompt.svelte')).default)
-	})
+	// onMount(async () => {
+	// 	!dev && browser && (ReloadPrompt = (await import('$lib/components/ReloadPrompt.svelte')).default)
+	// })
 </script>
 
 <svelte:head>
