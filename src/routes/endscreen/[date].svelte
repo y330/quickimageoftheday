@@ -8,7 +8,6 @@
 <div
   class="main-content"
   style="
-		width: 100%;
 		padding: 60px;
 		display: table-cell;
 		vertical-align: middle;

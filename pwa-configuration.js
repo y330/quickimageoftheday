@@ -6,12 +6,12 @@ const pwaConfiguration = {
 	scope: '/',
 	base: '/',
 	manifest: {
-		short_name: "PWA Router",
-		name: "PWA Router",
+		short_name: "Daily Image",
+		name: "Quick Image of the Day",
 		start_url: "/",
 		scope: "/",
 		display: "standalone",
-		theme_color: "#ffffff",
+		theme_color: "#ff2300",
 		background_color: "#ffffff",
 		icons: []
 	},
@@ -59,8 +59,8 @@ if (sw) {
 	pwaConfiguration.srcDir = 'src'
 	pwaConfiguration.filename = claims ? 'claims-sw.ts' : 'prompt-sw.ts'
 	pwaConfiguration.strategies = 'injectManifest'
-	pwaConfiguration.manifest.name = 'PWA Inject Manifest'
-	pwaConfiguration.manifest.short_name = 'PWA Inject'
+	pwaConfiguration.manifest.name = 'Quick Image Of the Day'
+	pwaConfiguration.manifest.short_name = 'Daily Image'
 	pwaConfiguration.injectManifest = workboxOrInjectManifestEntry
 } else {
 	workboxOrInjectManifestEntry.mode = 'development'
