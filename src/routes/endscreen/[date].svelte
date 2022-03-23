@@ -9,25 +9,21 @@
   class="main-content"
   style="
 		padding: 60px;
-		display: table-cell;
 		vertical-align: middle;
 		position: relative;
 	"
 >
-  <div class="t-welcome-screen ng-scope">
-    <div ng-if="block.properties.image" class="t-image ng-scope">
+    <div ng-if="block.properties.image">
       <img
         height-percentage="47"
         min-height="200"
         max-width="800"
         alt="TanenbaumCHAT"
-        class="ng-isolate-scope"
         src="https://prosurvey.memotext.com/api/shared/files/k0FkqN6PWdpttreQq4De.png"
         style="width: 80vw;"
       />
     </div>
 
-    <div>
       <span
         style="
 		text-align: center;
@@ -48,6 +44,4 @@
         to the staff member at the door prior to entry.<br />A confirmation
         email with the same image will also be sent to your email for reference.</span
       >
-    </div>
-  </div>
 </div>
