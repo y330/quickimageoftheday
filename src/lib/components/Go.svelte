@@ -59,7 +59,7 @@
   label {
     position: absolute;
     top: 18px;
-	width: fit-content;
+	width: 100%;
 	text-align: right;
     color: rgba(0, 0, 0, 0.3);
     transform-origin: left;
