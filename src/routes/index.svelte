@@ -22,17 +22,21 @@
   /* links */
   a {
     color: #ff3e00;
-	text-decoration: none;
+    text-decoration: none;
   }
   a:hover {
-	color: #ff3e0066;
-	text-decoration: underline;
+    color: #ff3e0066;
+    text-decoration: underline;
   }
   /* media queries */
   @media (min-width: 480px) {
-	h1 {
-	  max-width: none;
-	}
+    h1 {
+      max-width: none;
+    }
   }
-
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
 </style>
